@@ -21,7 +21,7 @@ test {
 jar {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     manifest {
-        attributes 'Main-Class': 'im.adams.coolbot-updater.Update'
+        attributes 'Main-Class': 'im.adams.Update'
     }
     from {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
